@@ -5,10 +5,10 @@
 
 ### Использованные технологии:
 
-Python 3.11
-Django 5.0.4
-djangorestframework 3.15.1
-djangorestframework-simplejwt 5.3.1
+Python 3.9
+Django 
+djangorestframework 
+djangorestframework-simplejwt 
 PostgreSQL 13
 
 ### Запуск проекта
