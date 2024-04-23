@@ -14,7 +14,14 @@ PostgreSQL 13
 ### Запуск проекта
 
 1) Создать БД Postgre для использования в приложении.
-2) Создать и активировать виртуальное окружение.
+2) В корне проекта создать файл .env и указать в нем следующие настройки:
+    - SECRET_KEY=django-insecure-279dw5a0yq!bqs-&a+l*^wl^dk^^dn_vtntc3zem_00_i6w%1a
+    - NAME - имя созданной БД
+    - USER - имя пользователя БД
+    - PASSWORD - пароль пользователя БД
+    - HOST - хост для подключения к БД
+    - PORT - порт для подключения к БД
+3) Создать и активировать виртуальное окружение.
 
 ```
 python3 -m venv env
@@ -35,19 +42,19 @@ python3 -m venv env
 ```
 python3 -m pip install --upgrade pip
 ```
-3) Установить зависимости из файла requirements.txt
+4) Установить зависимости из файла requirements.txt
 
 ```
 pip install -r requirements.txt
 ```
 
-4) Выполнить миграции
+5) Выполнить миграции
 
 ```
 python3 manage.py migrate
 ```
 
-5) Запустить проект
+6) Запустить проект
 
 ```
 python3 manage.py runserver
